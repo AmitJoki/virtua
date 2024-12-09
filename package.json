@@ -51,6 +51,7 @@
     "typedoc": "typedoc",
     "size": "size-limit",
     "prepublishOnly": "npm run typedoc && rimraf lib && npm run build",
+    "prepare": "npm run prepublishOnly",
     "deps:patch": "npm-check-updates --target patch -u",
     "deps:minor": "npm-check-updates --target minor -u",
     "deps:latest": "npm-check-updates --target latest -u"
